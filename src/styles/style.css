@@ -1,0 +1,234 @@
+
+.leftmenu_main{
+   width: 134px;
+    background-color: #495FF2;
+    height: 435px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+.font_div i
+{
+    font-size: 30px;
+    color: #fff;
+    text-indent: 28px;
+    padding: 20px;
+}
+.img_sec
+{
+    width: 133px;
+    height: 150px;
+}
+.img_sec img
+{
+    height: 178px;
+}
+.balence_div
+{
+    float: left;
+    width: 400px;
+    height: 229px;
+    /* border: 1px solid; */
+    margin-left: 30px;
+    margin-top: 40px;
+    color: gray;
+}
+.pull_left
+{
+    float: left;
+}
+body
+{
+     font-family: Arial;
+     background-color: #F5F7FB;
+}
+.balence_div p
+{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color:#495FF2;
+}
+
+.prefix
+{
+    font-size: 11px;
+    padding-right: 10px;
+}
+.main_no
+{
+    font-size: 25px;
+}
+.percent_section .span1
+{
+    font-size: 10px;
+    padding-right: 9px;
+}
+.percent_section .span2
+{
+    font-size: 10px;
+    color: green;
+}
+.action_btn
+{
+    background: #fff;
+    width: 40px;
+    height: 35px;
+    color: #495FF2;
+    text-align: center;
+    font-weight: lighter;
+    display: inline-block;
+    margin-right: 15px;
+    padding: 4px;
+    font-size: 14px;
+}
+.pull-right
+{
+    float: right;
+}
+.header
+{
+    width:1184px;
+    float: left;
+    height: 90px;
+    border-bottom: 2px solid #fff;
+}
+.head_arrow
+{
+    width: 100px;
+    height: 100%;
+    border-right: 2px solid gray;
+    display: inline-block;
+}
+.head_arrow i
+{
+    font-size: 50px;
+    color: gray;
+    padding: 16px;
+}
+.ao{
+    color: gray;
+    position: relative;
+    padding: 16px;
+    bottom: 13px;
+}
+.head_right
+{
+    display: inline-block;
+    float: right;
+    margin-top: 29px;
+}
+.head_right i
+{
+    color: #495FF2;
+    padding-right: 20px;
+}
+.head_right span
+{
+    color: gray;
+    padding-right: 20px;
+}
+.rev
+{
+     clear: both;
+    border-top: 20px solid transparent;
+}
+.rev p,.dol_pr,.odr p
+{
+    font-size: 12px;
+    margin-right: 5px;
+}
+.rev_no
+{
+    font-size:25px;
+}
+.rev_gp
+{
+    width:107px;
+    height: 26px;
+}
+.rev_per
+{
+    font-size: 12px;
+    color: green;
+    position: relative;
+    bottom: 14px;
+    left: 111px;
+}
+.odr
+{
+     width: 190px;
+    display: inline-block;
+    position: relative;
+    left: 227px;
+    bottom: 103px;
+}
+.graph
+{
+    width: 1184px;
+    position: absolute;
+    bottom: 56px;
+    left: 161px;
+    height: 230px;
+}
+.gp_name
+{
+    color:#495FF2;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-right: 20px;
+}
+.fa-circle-o
+{
+    font-size: 14px;
+    margin-right: 20px;
+    color: #495FF2;
+}
+.graph_head a{
+    text-decoration: none;
+    color: gray;
+    margin-right: 12px;
+    float: right;
+    padding: 14px;
+    width: 50px;
+    text-align: center;
+}
+.eb
+{
+    color: gray;
+    font-size: 13px;
+}
+.menu{
+    background: #495FF2;
+    color: #fff !important;
+    border-radius: 8px;
+}
+.footer
+{
+    position: absolute;
+    bottom: 0px;
+    height: 51px;
+    width: 1184px;
+    left: 164px;
+}
+.footer_btn
+{
+    float: right;
+    text-align: center;
+    width: 50px;
+    height: 70%;
+    padding-top: 16px;
+    font-size: 20px;
+    background-color: #fff;
+    color: #495ff2;
+}
+.display_list
+{
+    width: 700px;
+    height: 50px;
+    float: right;
+    background-color: #fff;
+    margin-right: 3px;
+}
+.cs{
+    padding-left:20px;
+}
