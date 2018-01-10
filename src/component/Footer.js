@@ -1,5 +1,6 @@
 import React from 'react';
 import CountUp from 'react-countup';
+import Transition from 'react-transition-group/Transition';
 class Footer extends React.Component
 {
     constructor(props)
@@ -7,7 +8,8 @@ class Footer extends React.Component
         super(props);
         this.state = {
             btncl:'fa fa-play',
-            displayData: false
+            displayData: false,
+            active: true
         }
         this.display_list = this.display_list.bind(this);
     }
@@ -30,24 +32,31 @@ class Footer extends React.Component
     }
 
     render() {
-        
         return (
             <div className="footer">
                 <div className="footer_btn" onClick={this.display_list}>
                     <i className={this.state.btncl}></i>
                 </div>
-                { this.state.displayData ?
-                <div className="display_list">
-                   <CounterSet prifix='ETH/BIT' main_no={1265} per_$={34567} percent={8.98}/>
-                   <CounterSet prifix='ETH/BIT' main_no={1265} per_$={34567} percent={8.98}/>
-                   <CounterSet prifix='ETH/BIT' main_no={1265} per_$={34567} percent={8.98}/>
-                   <CounterSet prifix='ETH/BIT' main_no={1265} per_$={34567} percent={8.98}/>
-                </div>: null
-                }
+               
+                <Transition in={this.state.displayData} mountOnEnter unmountOnExit timeout={500}>
+                {(state) => (
+                <div show={state} className={`display_list ${state=='entering'? 'ModalOpen': state=='exiting'? 'ModalClosed':null }`} >
+                   <CounterSet prifix='ETH/BIT' main_no={1265} per_$={34567} percent={0.98}/>
+                   <CounterSet prifix='ETH/BIT' main_no={185} per_$={3567} percent={9.08}/>
+                   <CounterSet prifix='ETH/BIT' main_no={975} per_$={16547} percent={12.98}/>
+                   <CounterSet prifix='ETH/BIT' main_no={125} per_$={4567} percent={11.98}/>
+                </div>
+                )}
+                </Transition>
+               
             </div>
         );
     }
 }
+
+const divStyle = {
+    background: 'pink',
+};
 const CounterSet = (props) => {
     return (
         <div className="cs">

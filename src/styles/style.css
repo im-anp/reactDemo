@@ -201,6 +201,7 @@ body
     background: #495FF2;
     color: #fff !important;
     border-radius: 8px;
+    transition: all 0.8s ease-in-out;
 }
 .footer
 {
@@ -228,7 +229,165 @@ body
     float: right;
     background-color: #fff;
     margin-right: 3px;
+    transition: all 1s ease-in-out;
+}
+.footerOpen
+{
+    opacity: 1;
+}
+.footerClose
+{
+    opacity: 0;
+}
+.formShow
+{
+    opacity: 1;
 }
 .cs{
     padding-left:20px;
+}
+
+
+.ModalOpen {
+    animation: openModal 0.4s ease-out forwards;
+}
+
+.ModalClosed {
+    animation: closeModal 0.4s ease-out forwards;
+}
+
+@keyframes openModal {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(-60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes closeModal {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 0.8;
+        transform: translateX(-60%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+}
+.card_section
+{
+    width: 500px;
+    height: 183px;
+    display: inline-block;
+    margin-left: 224px;
+    margin-top: 59px;
+}
+.fa-search
+{
+    color:gray;
+    margin-right:30px;
+}
+.nev
+{
+    color: gray;
+    font-weight: bold;
+    float: right;
+    margin-right: 30px;
+}
+.fa-angle-left
+{
+    margin-right: 30px;
+    font-size: 20px;
+}
+.fa-angle-right
+{
+    margin-left: 30px;
+    font-size: 20px;
+}
+.fa-ellipsis-h
+{
+    margin-left:20px;
+    margin-right:20px;
+}
+.card_body
+{
+    margin-top:30px;
+}
+.img1
+{
+     height: 130px;
+    margin-right: 40px;
+}
+.img2
+{
+    vertical-align: top;
+}
+.fa-feed
+{
+    color:gray;
+}
+.img1:hover,.img2:hover
+{
+     animation: img_h 0.4s ease-out forwards;
+}
+@keyframes img_h {
+    0% {
+       transform: translateY(-15%);
+    }
+    100% {
+       transform: translateY(0);
+    }
+}
+.move_card
+{
+    animation: slide1 0.8s ease-out forwards;
+}
+.move_card1
+{
+    animation: slide1 0.8s ease-out forwards;
+}
+@keyframes slide {
+    0% {
+       transform: translateX(-40%);
+       opacity: 0
+    }
+    
+}
+@keyframes slide1 {
+     0% {
+        transform: translateX(-5%);
+        opacity:1;
+    }
+    5% {
+        transform: translateX(-10%);
+        opacity:1;
+    }
+    20% {
+        transform: translateX(-10%);
+        opacity:1;
+    }
+    50% {
+        transform: translateX(-100%);
+        opacity:0;
+    }
+    99.99% {
+        transform: translateX(0%);
+        opacity:0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity:1;
+    }
+    
 }

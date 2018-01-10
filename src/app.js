@@ -8,6 +8,7 @@ import Balence from './component/Balence.js';
 import Header from './component/Header.js';
 import Graph from './component/Graph.js';
 import Footer from './component/Footer.js';
+import Card from './component/card.js';
 import { Sparklines ,SparklinesLine } from 'react-sparklines';
 
 
@@ -25,6 +26,7 @@ class AddOption extends React.Component {
        <Leftmenu />
        <Header />
        <Balence />
+       <Card />
        <Graph />
        <Footer />
        </div>

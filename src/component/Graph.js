@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sparklines,SparklinesLine,SparklinesCurve,SparklinesBars  } from 'react-sparklines';
 
+
 class Graph extends React.Component
 {
     constructor(props)
@@ -11,7 +12,7 @@ class Graph extends React.Component
             eb:'ETH/USD',
             graph_data:[30,2,60,8,52,10,48,0.2,5,50,9],
             eth: 'menu',
-            bit:''
+            bit:'',
         }
         this.onBit = this.onBit.bind(this);
         this.onEth = this.onEth.bind(this);
